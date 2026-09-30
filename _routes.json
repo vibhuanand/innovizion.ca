@@ -1,0 +1,87 @@
+[
+  {
+    "path": "/",
+    "title": "Secure Cloud & Platform Engineering in Canada",
+    "noindex": false
+  },
+  {
+    "path": "/services/",
+    "title": "Cloud, Kubernetes, Security & DevOps Services",
+    "noindex": false
+  },
+  {
+    "path": "/services/cloud-platform/",
+    "title": "Cloud & Platform Engineering Consulting in Canada",
+    "noindex": false
+  },
+  {
+    "path": "/services/kubernetes/",
+    "title": "Kubernetes & Container Platforms Consulting in Canada",
+    "noindex": false
+  },
+  {
+    "path": "/services/devops/",
+    "title": "DevOps, DevSecOps & IaC Consulting in Canada",
+    "noindex": false
+  },
+  {
+    "path": "/services/cloud-security/",
+    "title": "Cloud Security & Identity Consulting in Canada",
+    "noindex": false
+  },
+  {
+    "path": "/services/disaster-recovery/",
+    "title": "Disaster Recovery & Resilience Consulting in Canada",
+    "noindex": false
+  },
+  {
+    "path": "/services/sre-observability/",
+    "title": "SRE & Observability Consulting in Canada",
+    "noindex": false
+  },
+  {
+    "path": "/government/",
+    "title": "Government & Regulated Industries",
+    "noindex": false
+  },
+  {
+    "path": "/case-studies/",
+    "title": "Selected Cloud & Platform Delivery Experience",
+    "noindex": false
+  },
+  {
+    "path": "/about/",
+    "title": "About Innovizion — Canadian Engineering Consultancy",
+    "noindex": false
+  },
+  {
+    "path": "/contact/",
+    "title": "Discuss a Requirement",
+    "noindex": false
+  },
+  {
+    "path": "/capabilities/",
+    "title": "Capability Statement — Cloud, Security & Platform Engineering",
+    "noindex": false
+  },
+  {
+    "path": "/privacy/",
+    "title": "Privacy",
+    "noindex": false
+  },
+  {
+    "path": "/legal/",
+    "title": "Legal information",
+    "noindex": false
+  },
+  {
+    "path": "/accessibility/",
+    "title": "Accessibility",
+    "noindex": false
+  },
+  {
+    "path": "/404.html",
+    "title": "Page Not Found",
+    "noindex": true
+  }
+]
