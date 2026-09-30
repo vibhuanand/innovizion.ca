@@ -1,3 +1,4 @@
+import {nomiarchFeature} from '../components/nomiarch.mjs';
 import { services, deliveryModels } from '../data/services.mjs';
 import { caseStudies, experienceNotice } from '../data/caseStudies.mjs';
 import { architecture } from '../components/architecture.mjs';
@@ -17,4 +18,5 @@ export const home={path:'/',title:'Secure Cloud & Platform Engineering in Canada
 <section class="technology-section"><div class="container"><div class="technology-title"><p class="eyebrow">Tools in service of the architecture</p><p>Built around your environment.</p></div><ul class="technology-list"><li>Microsoft Azure</li><li>Kubernetes</li><li>Terraform</li><li>GitHub Actions</li><li>Entra ID</li><li>Dynatrace</li></ul><p class="technology-secondary">Also working across AWS, GCP, Bicep, Azure DevOps, Helm, Prometheus and Grafana.</p></div></section>
 <section class="section"><div class="container">${sectionHead('05 / How we engage','The right depth.<br>The right delivery model.','Start with a focused assessment, a defined project or senior expertise embedded in your team.')}<div class="delivery-grid">${deliveryModels.slice(0,4).map((d,i)=>`<article><span class="mono">0${i+1}</span><h3>${d[0]}</h3><p>${d[1]}</p></article>`).join('')}</div><div class="section-tail"><a class="text-link" href="/services/#delivery">See all engagement options ${arrow}</a><span>Clear scope. Practical deliverables. Knowledge that stays with your team.</span></div></div></section>
 <section class="philosophy"><div class="container"><p class="eyebrow">Our engineering standard</p><h2>Understand the dependencies.<br>Automate the repeatable.<br><span>Prove the recovery.</span></h2><p>Security, reliability and maintainability belong in the same conversation.</p></div></section>
+${nomiarchFeature({compact:true})}
 ${cta()}`};

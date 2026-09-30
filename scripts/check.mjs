@@ -4,6 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {company} from '../src/config/company.mjs';
 import {procurement} from '../src/config/procurement.mjs';
+import {nomiarch} from '../src/data/nomiarch.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const routes=JSON.parse(await readFile(path.join(root,'_routes.json'),'utf8'));
 const failures=[];const titles=new Set();const descriptions=new Set();let internalLinks=0;
@@ -39,6 +40,11 @@ for(const route of routes){
  if(route.path.startsWith('/services/')&&route.path!=='/services/'&&!json.includes('"@type":"Service"'))fail(route.path,'Missing Service schema');
 }
 const sitemap=await readFile(path.join(root,'sitemap.xml'),'utf8');
+const aboutHtml=await readFile(fileFor('/about/'),'utf8');
+const homeHtml=await readFile(fileFor('/'),'utf8');
+if(!aboutHtml.includes('id="nomiarch"')||!aboutHtml.includes(`href="${nomiarch.url}"`))fail('/about/','Missing Nomiarch section or project link');
+if(!aboutHtml.includes(nomiarch.status)||!aboutHtml.includes(nomiarch.boundary))fail('/about/','Missing Nomiarch preview and validation context');
+if(!homeHtml.includes('/about/#nomiarch')||!homeHtml.includes(nomiarch.status))fail('/','Missing contextual Nomiarch preview link');
 for(const route of routes.filter(r=>!r.noindex))if(!sitemap.includes(`<loc>${company.url+route.path}</loc>`))fail(route.path,'Not in sitemap');
 if(sitemap.includes('404.html'))fail('sitemap','404 must not be indexed');
 if((await readFile(path.join(root,'CNAME'),'utf8')).trim()!=='www.innovizion.ca')fail('CNAME','Domain changed');
