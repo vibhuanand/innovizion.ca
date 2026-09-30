@@ -2,7 +2,7 @@
 
 Date: 2026-09-29. Repository: `vibhuanand/innovizion.ca`.
 
-**Status: implemented and validated; publication authorized.** Personal-account GitHub repository access was restored on 2026-09-30 UTC. The original production revision is preserved on `backup/pre-overhaul-2026-09-29`. The replacement uses the existing GitHub Pages source and hostname; publication is traceable through GitHub commit and deployment history.
+**Status: published and verified at https://www.innovizion.ca/.** The website release is commit `36c24743c15f486e7d253cd5911ee5a4215d18ff`; GitHub verification and Pages deployment both succeeded on 2026-09-30 UTC (2026-09-29 in Ontario). The original production revision is preserved on `backup/pre-overhaul-2026-09-29`. The existing GitHub Pages source, domain and DNS are unchanged. See [production verification](DEPLOYMENT.md).
 
 ## 1. What changed
 
